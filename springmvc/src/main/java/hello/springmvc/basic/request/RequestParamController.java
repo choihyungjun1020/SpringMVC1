@@ -97,7 +97,7 @@ public class RequestParamController {
      * 나머지 = @ModelAttribute (argument resolver 로 지정해둔 타입 외)
      */
     @ResponseBody
-    @RequestMapping("model-attribute-v1")
+    @RequestMapping("model-attribute-v2")
     public String modelAttributeV2(HelloData helloData) {
         log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
         return "ok";
